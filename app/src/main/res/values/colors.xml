@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Primary Brand Colors -->
+    <color name="purple_deep">#1A0A2E</color>
+    <color name="purple_primary">#6C2BD9</color>
+    <color name="purple_light">#9B59F5</color>
+    <color name="purple_ultra_light">#D4B8FF</color>
+    <color name="accent_cyan">#00D4FF</color>
+    <color name="accent_pink">#FF6B9D</color>
+    <color name="accent_gold">#FFD700</color>
+
+    <!-- Background Colors -->
+    <color name="bg_dark">#0D0620</color>
+    <color name="bg_card">#1E1040</color>
+    <color name="bg_card_alt">#251545</color>
+    <color name="bg_surface">#2A1A50</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0A8CC</color>
+    <color name="text_hint">#706890</color>
+
+    <!-- Status Colors -->
+    <color name="success_green">#00E676</color>
+    <color name="error_red">#FF5252</color>
+    <color name="warning_orange">#FF9100</color>
+
+    <!-- Standard -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
 </resources>
