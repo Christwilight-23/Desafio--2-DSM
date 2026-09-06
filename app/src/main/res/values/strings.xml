@@ -1,3 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Desafio2</string>
+    <string name="app_name">QuizMaster</string>
+
+    <!-- MainActivity -->
+    <string name="title_select_quiz">Selecciona tu Quiz</string>
+    <string name="subtitle_select_quiz">Elige una categoría y dificultad</string>
+    <string name="label_category">Categoría</string>
+    <string name="label_difficulty">Dificultad</string>
+    <string name="btn_start_quiz">¡Comenzar Quiz!</string>
+
+    <!-- QuizActivity -->
+    <string name="quiz_title">Quiz</string>
+    <string name="btn_submit">Enviar Respuestas</string>
+    <string name="btn_restart">Reiniciar</string>
+    <string name="questions_answered">%1$d / %2$d respondidas</string>
+    <string name="pending_questions_title">Preguntas pendientes</string>
+    <string name="pending_questions_message">Debes responder todas las preguntas antes de enviar.\n\nPreguntas sin responder: %1$s</string>
+    <string name="dialog_ok">Entendido</string>
+    <string name="restart_confirm_title">¿Reiniciar quiz?</string>
+    <string name="restart_confirm_message">Se borrarán todas tus respuestas. ¿Deseas continuar?</string>
+    <string name="restart_confirm_yes">Sí, reiniciar</string>
+    <string name="restart_confirm_no">Cancelar</string>
+
+    <!-- ResultActivity -->
+    <string name="result_title">Resultado Final</string>
+    <string name="result_score">%1$d / %2$d</string>
+    <string name="result_excellent">¡Excelente!</string>
+    <string name="result_good">¡Muy bien!</string>
+    <string name="result_average">¡Sigue practicando!</string>
+    <string name="result_poor">¡Inténtalo de nuevo!</string>
+    <string name="btn_back_home">Volver al Inicio</string>
+    <string name="btn_retry">Repetir Quiz</string>
+    <string name="result_category_label">Categoría: %1$s</string>
+    <string name="result_difficulty_label">Dificultad: %1$s</string>
+    <string name="correct_answers_label">Respuestas correctas</string>
+    <string name="percentage_label">Porcentaje de acierto</string>
 </resources>
