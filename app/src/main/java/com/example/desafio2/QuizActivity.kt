@@ -12,9 +12,9 @@ import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.ScrollView
 import android.widget.TextView
+import androidx.appcompat.widget.Toolbar
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 
 class QuizActivity : AppCompatActivity() {
@@ -294,19 +294,17 @@ class QuizActivity : AppCompatActivity() {
 
             val pendingList = pendingNumbers.joinToString(", ") { "Pregunta $it" }
             AlertDialog.Builder(this)
-                .setTitle("⚠️ Preguntas pendientes")
+                .setTitle("Preguntas pendientes")
                 .setMessage(
                     "Debes responder todas las preguntas antes de enviar.\n\n" +
                     "Sin responder:\n• ${pendingNumbers.joinToString("\n• ") { "Pregunta $it" }}"
                 )
                 .setPositiveButton("Entendido") { dialog, _ ->
                     dialog.dismiss()
-                    // Scroll a la primera pregunta pendiente
                     scrollToQuestion(pendingNumbers.first() - 1)
                 }
                 .show()
         } else {
-            // Calcular puntaje
             var correct = 0
             questions.forEachIndexed { index, question ->
                 val userAnswer = userAnswers[index] ?: -1

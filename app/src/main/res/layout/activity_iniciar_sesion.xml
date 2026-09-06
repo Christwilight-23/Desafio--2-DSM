@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IniciarSesion">
+
+    <TextView
+        android:id="@+id/tgTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Iniciar Sesion"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tgDescripcion"
+        android:layout_width="380dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Ingresa tus credenciales, correo y contraseña, si no te has registrado busca el vinculo para registrarte"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tgTitulo" />
+
+    <TextView
+        android:id="@+id/tgGmail"
+        android:layout_width="370dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="35dp"
+        android:text="Gmail:"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tgDescripcion" />
+
+    <EditText
+        android:id="@+id/esGmail"
+        android:layout_width="375dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:hint="tu_correo@gmail.com"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="#BBBBBB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tgGmail" />
+
+    <TextView
+        android:id="@+id/tgContraseña"
+        android:layout_width="374dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="25dp"
+        android:text="Contraseña:"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/esGmail" />
+
+    <EditText
+        android:id="@+id/esContraseña"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:hint="tu_contraseña"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="#BBBBBB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tgContraseña" />
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="370dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="35dp"
+        android:text="Guardar"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/esContraseña" />
+
+    <TextView
+        android:id="@+id/tvIniciarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="¿No tienes una cuenta? Registrate"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnIniciarSesion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

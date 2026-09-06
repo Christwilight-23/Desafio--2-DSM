@@ -14,27 +14,38 @@
 
         <!-- Pantalla principal: Selección de quiz -->
         <activity
-            android:name=".MainActivity"
+            android:name=".IniciarSesion"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <!-- Pantalla del cuestionario -->
         <activity
             android:name=".QuizActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
-        <!-- Pantalla de resultados -->
         <activity
             android:name=".ResultActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
+        <activity
+            android:name=".Registro"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Bienvenida"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

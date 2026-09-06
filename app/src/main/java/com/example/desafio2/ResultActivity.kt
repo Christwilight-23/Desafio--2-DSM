@@ -4,6 +4,7 @@ import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
 import android.view.Gravity
+import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.ProgressBar
@@ -107,25 +108,25 @@ class ResultActivity : AppCompatActivity() {
         return when {
 
             score == total && difficulty == "Difícil" ->
-                "¡Eres demasiado bueno, deberias de dedicarte a esto !"
+                "Como pegarle a un bolo"
 
             score == total ->
-                "¡Eres un crack total, sin dudas!"
+                "Me merezco un churro."
 
             percent >= 80 ->
-                "¡Vas que te mereces un dulce!"
+                "Me merezco un churro."
 
             percent >= 60 ->
-                "¡Vas bien, pero el dulce se quedó a medias!"
+                "Mas o menos OK."
 
             percent >= 40 ->
-                "Hay que estudiar más antes del próximo dulce..."
+                "Mas o menos OK."
 
             percent >= 20 ->
-                "¡no te ganas nada, sigue intentándolo!"
+                "Mejor me dedico a otra cosa."
 
             else ->
-                "¡A estudiar que ahora no tienes ni las por participar!"
+                "Mejor me dedico a otra cosa."
         }
     }
 
@@ -215,7 +216,7 @@ class ResultActivity : AppCompatActivity() {
         }
 
 
-        val divider = android.view.View(this).apply {
+        val divider = View(this).apply {
             val lp = LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, dpToPx(1)
             ).apply { bottomMargin = dpToPx(12) }

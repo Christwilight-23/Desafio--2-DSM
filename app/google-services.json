@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1081549297794",
+    "project_id": "desafio-02---dsm",
+    "storage_bucket": "desafio-02---dsm.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081549297794:android:60f215d5453481f79c3c9b",
+        "android_client_info": {
+          "package_name": "com.example.desafio2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyD-_rQi0OaAN6jjqg1Cop6-EcNEVGGik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
